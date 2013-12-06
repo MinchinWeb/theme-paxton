@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="{{ site.author.name }}" />
+    <title>{{ page.title }}</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700|Life+Savers' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/paxton.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pygment_trac.css">
+	<style type="text/css">
+	<!-- Responsive background image -->
+	@media only screen and (max-width: 290px) and (max-height: 193px) {
+		body {
+			background: url('{{ ASSET_PATH }}/img/background-290.jpg') no-repeat center center fixed;
+		}
+	}
+	@media only screen and (min-width: 291px) and (max-width: 480px) and (max-height: 320px) {
+		body {
+			background: url('{{ ASSET_PATH }}/img/background-480.jpg') no-repeat center center fixed;
+		}
+	}
+	@media only screen and (min-width: 481px) and (max-width: 600px) and (max-height: 400px) {
+		body {
+			background: url('{{ ASSET_PATH }}/img/background-600.jpg') no-repeat center center fixed;
+		}
+	}
+	@media only screen and (min-width: 601px) and (max-width: 900px) and (max-height: 600px) {
+		body {
+			background: url('{{ ASSET_PATH }}/img/background-900.jpg') no-repeat center center fixed;
+		}
+	}
+	@media only screen and (min-width: 901px) and (max-width: 1350px) and (max-height: 900px) {
+		body {
+			background: url('{{ ASSET_PATH }}/img/background-1350.jpg') no-repeat center center fixed;
+		}
+	}
+	@media only screen and (min-width: 1351px) and (max-width: 1875px) and (max-height: 1250px) {
+		body {
+			background: url('{{ ASSET_PATH }}/img/background-1875.jpg') no-repeat center center fixed;
+		}
+	}
+	@media only screen and (min-width: 1876px) and (max-width: 2250px) and (max-height: 1700px) {
+		body {
+			background: url('{{ ASSET_PATH }}/img/background-2250.jpg') no-repeat center center fixed;
+		}
+	}
+	@media only screen and (min-width: 2251px) and (max-width: 3450px) and (max-height: 2300px) {
+		body {
+			background: url('{{ ASSET_PATH }}/img/background-3450.jpg') no-repeat center center fixed;
+		}
+	}
+	@media only screen and (min-width: 3451px) {
+		body {
+			background: url('{{ ASSET_PATH }}/img/background-4272.jpg') no-repeat center center fixed;
+		}
+	}
+	</style>
+	
+    {% include JB/analytics %}
+  </head>
+  <body>
+    <div id="header">
+      <!-- Header start -->
+      <ul id="nav-bar">
+	    <li><a href="{{ BASE_PATH }}/">Home</a></li>
+        {% assign pages_list = site.pages %}
+        {% assign group = 'nav' %}
+        {% include JB/pages_list %}
+      </ul>
+      <!-- Header end -->
+    </div>
+  
+    <div id="content">
+      <!-- Content start -->
+        <div class="full-width">
+          {{ content }}
+        </div>
+      <!-- Content end -->
+    </div>
+	
+    <div id="footer">
+      <!-- Footer start -->
+      <div class="full-width">
+        <p>{% if site.author %}Content &copy; {% if site.copyright_year %} {{ site.copyright_year }} {% else %} 2013 {% endif %} {{ site.author.name }}. {% endif %}Design by <a href="http://www.minchin.ca/theme-paxton">W. Minchin</a>.</p>
+      </div>
+      <!-- Footer end -->
+    </div>
+  </body>
+</html>

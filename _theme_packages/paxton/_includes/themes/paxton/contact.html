@@ -1,0 +1,42 @@
+<div class="backing">
+	<h1>{{ page.title }}</h1>
+
+	<p>If you want to find me online, here's where!</p>
+
+	<ul>
+		{% if site.author %}
+			{% if site.author.email %}
+				<li class="contact">By email: {{ site.author.email }}</li>
+			{% endif %}
+			{% if site.author.github %}
+				<li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
+			{% endif %}
+			{% if site.author.twitter %}
+				<li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
+			{% endif %}
+			{% if site.author.facebook %}
+				<li class="facebook"><a href="http://facebook.com/{{ site.author.facebook }}/" rel="me">facebook.com/{{ site.author.facebook }}</a></li>
+			{% endif %}
+			{% if site.author.flickr %}
+				<li class="flickr"><a href="http://flickr.com/{{ site.author.flickr }}/" rel="me">flickr.com/{{ site.author.flickr }}</a></li>
+			{% endif %}
+			{% if site.author.yelp %}
+				<li class="yelp"><a href="http://{{ site.author.yelp }}.yelp.com/" rel="me">{{ site.author.yelp }}.yelp.com</a></li>
+			{% endif %}
+			{% if site.author.pinterest %}
+				<li class="pinterest"><a href="http://pinterest.com/{{ site.author.pinterest }}" rel="me">pinterest.com/{{ site.author.pinterest }}</a></li>
+			{% endif %}
+			{% if site.author.linkedin %}
+				<li class="linkedin"><a href="http://linkedin.com/profile/view?id={{ site.author.linkedin }}" rel="me">linkedin.com/profile/view?id={{ site.author.linkedin }}</a></li>
+			{% endif %}
+			{% if site.author.google_plus %}
+				<li class="google_plus"><a href="http://plus.google.com/{{ site.author.google_plus }}" rel="me">plus.google.com/{{ site.author.google_plus }}</a></li>
+			{% endif %}
+			
+		{% else %}
+			<li>You haven't configured any contact information :,(</li>
+		{% endif %}
+	</ul>
+				
+	{{ content }}
+</div>

@@ -1,0 +1,14 @@
+<div class="backing">
+  <h1>{{ page.title }}</h1>
+
+  {% if page.redirect_url %}
+  <p>Your should be redirect to <a href="{{ page.redirect_url }}">{{ page.redirect_url }}</a> shortly...</p>
+  <script type="text/javascript">
+    window.location.href = "{{ page.redirect_url }}"
+  </script>
+  {% else %}
+  <p>I'm supposed to redirect you somewhere, but they forgot to tell me where...</p>
+  {% endif %}
+  
+  {{ content }}
+</div>

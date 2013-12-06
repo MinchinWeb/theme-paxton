@@ -1,0 +1,9 @@
+---
+name : paxton
+website : http://minchin.ca/theme-paxton
+git_url : git://github.com/MinchinWeb/theme-paxton.git
+source_url : https://github.com/MinchinWeb/theme-paxton
+description : A theme for Jekyll + Jekyll-Bootstrap, providing a top and bottom accent bar, and a full image background.
+author:
+  name : William Minchin
+  website : http://minchin.ca/

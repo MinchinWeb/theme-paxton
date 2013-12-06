@@ -1,0 +1,113 @@
+﻿/* Fonts */
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Life Savers', cursive;
+}
+/* End Fonts */
+
+/* responsive background is directly in default.html, so that ASSET_PATH
+	can be processed
+ */
+
+/* For skicky footer */
+html {
+    min-height:100%;
+    position: relative;
+}
+#header {
+    padding:0;
+}
+#content{
+    padding: 0;
+    padding-bottom: 2em; /* Height of the footer */
+}
+#footer {
+    height: 2em; /* Height of the footer */
+    background: #111;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+/* END for sticky footer */
+
+body {
+    background-color: #eee;
+    background: url('img/background-900.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2em;
+    height: 100%;
+}
+
+.full-width {
+    max-width:960px;
+    margin: 0 auto;
+}
+
+#main-title {
+    color: #111;
+    /*color: #3cf;*/
+    text-align:left;
+    position:absolute;
+    bottom:1em;
+}
+#main-title h1 {
+    padding: 0em 0em;
+    font-size: 500%;
+}
+
+#nav-bar{
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+    background: #111;
+}
+#nav-bar li{
+	display:inline;
+}
+#nav-bar a{
+    color: #eee;
+    text-decoration:none;
+	display:inline-block;
+	padding:10px;
+}
+#nav-bar a:hover {
+    background: #3cf;
+}
+
+#footer p {
+    margin: 4px;
+    color: #eee;
+    text-align: right;
+}
+#footer a {
+    color: #eee;
+    text-decoration: underline;
+}
+#footer a:hover {
+    color: #3cf;
+}
+
+table {
+    text-align:center;
+    margin: 0 auto;
+}
+td {
+    padding:1px;
+    border:none;
+}
+
+.backing {
+    /* Used to apply a semi-tan(?) background under text */
+    background-color: #eee;
+    padding: 0 1em;
+    opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+}
