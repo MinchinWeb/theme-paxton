@@ -27,7 +27,7 @@ hit yes!
 ## Features
 
 The *Paxton* theme supports three special layouts, in addition to the normal
-`pages` and `posts` layouts. To use specify the layout, in the YAML at the top
+`pages` and `posts` layouts. To use these, specify the layout, in the YAML at the top
 of post/page, specify it. For example:
 
 ~~~yaml
@@ -196,15 +196,15 @@ h1, h2, h3, h4, h5, h6 {
 
 ## License
 
-The Paxton theme is Copyright &copy; 2013 William Minchin.
+The *Paxton* theme is Copyright &copy; 2013 William Minchin.
 
 Permission is granted to you to use, copy, modify, merge, publish, distribute,
 sublincense, and/or sell this software, and provide these rights to others,
 provided:
 
-    + The above copyright notice and this permission notice shall be included
-        in all copies or substantial portions of the software.
-    + Attribution is provided in the normal place for recognition of 3rd party
-        contributions.
-    + You accept that this software is provided to you "as is", without
-        warranty.
++ The above copyright notice and this permission notice shall be included
+	in all copies or substantial portions of the software.
++ Attribution is provided in the normal place for recognition of 3rd party
+	contributions.
++ You accept that this software is provided to you "as is", without
+    warranty.
