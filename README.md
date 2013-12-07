@@ -1,4 +1,4 @@
-Paxton for Jekyll Bootstrap
+﻿Paxton for Jekyll Bootstrap
 ==========================
 
 *Paxton* is a theme for GitHub Pages by [MinchinWeb](http://github.com/minchinweb/theme-paxton).
