@@ -48,7 +48,7 @@ html {
 
 body {
     background-color: #eee;
-    background: url('img/background-900.jpg') no-repeat center center fixed;
+    background: url('../img/background-900.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
